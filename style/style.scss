@@ -1,0 +1,99 @@
+$Purple: hsl(259, 100%, 65%);
+$Lightred: hsl(0, 100%, 67%);
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: rgb(240 240 240);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+    .card{
+        width: 43.6%;
+        background-color: white;
+        border-radius: 1.5rem 1.5rem 12rem 1.5rem;
+
+        .container{
+            padding: 3.5rem;
+            display: flex;
+            flex-direction: column;
+
+            .form-container{
+                display: flex;
+                gap: 2rem;
+
+                .block label{
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    color: rgb(136, 136, 136);
+                    letter-spacing: 3px;
+                    font-size: .9rem;
+                }
+
+                input{
+                    width: 160px;
+                    height: 70px;
+                    padding-left: .5rem;
+                    margin-top: .5rem;
+                    border-radius: .5rem;
+                    border: 1px solid rgba(0, 0, 0, 0.116);
+                    display: flex;
+                    align-items: center;
+                    font-size: 1.5rem;
+                }
+                input::placeholder{
+                    font-size: 2rem;
+                    font-weight: 800;
+                    color: rgb(139 139 139);
+                    padding-left: 1rem;
+                }
+                small{
+                    color: $Lightred;
+                    font-weight: 400;
+                    font-style: italic;
+
+                }
+            }
+            .submit-block{
+                display: flex;
+                align-items: center;
+            }
+
+            .submit-block hr{
+                width: 100%;
+                border-color: rgba(138, 138, 138, 0.082);
+            }
+            
+            .submit-block .submit-btn{
+                border-radius: 50%;
+                background-color: $Purple;
+                border: none;
+                padding: 1.5rem;
+                cursor: pointer;
+
+            }
+
+
+
+
+            .age-container h1{
+                color: rgb(20, 20, 20);
+                font-size: 6.5rem;
+                font-weight: 800;
+                font-style: italic;
+                line-height: 7rem;
+                letter-spacing: -1px
+            }
+            .age-container span{
+                color: $Purple;
+
+            }
+        }
+    }
+}
+
